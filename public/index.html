@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .status-disconnected {
+      color: red;
+    }
+    .status-connected {
+      display: none;
+      color: green;
+    }
+    .column {
+      float: left;
+      width: 30%;
+      min-height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="content">
+  <button id="connect">connect</button>
+  <button id="disconnect">disconnect</button>
+  <div id="status">
+    <p class="status-connected">connected</p>
+    <p class="status-disconnected">disconnected</p>
+  </div>
+
+  <div id="n1" class="column">
+    <button class="pause">pause</button>
+    <button class="resume">resume</button>
+    <pre></pre>
+  </div>
+  <div id="n2" class="column">
+    <button class="pause">pause</button>
+    <button class="resume">resume</button>
+    <pre></pre>
+  </div>
+  <div id="n3" class="column">
+    <button class="pause">pause</button>
+    <button class="resume">resume</button>
+    <pre></pre>
+  </div>
+
+</div>
+
+<script src="/bundle.js">  </script>
+</body>
+</html>

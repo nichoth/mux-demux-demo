@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "browserify -d browser.js > public/bundle.js"
+  },
+  "dependencies": {
+    "ecstatic": "^1.4.0",
+    "mux-demux": "^3.7.9",
+    "reconnect-core": "^1.1.0",
+    "shoe": "0.0.15",
+    "through2": "^2.0.0"
+  }
+}
