@@ -9,10 +9,7 @@ var r = reconnect(function(wsStream) {
   var mdm = MuxDemux(function(stream) {
 
     var splitStreams = ['n1', 'n2', 'n3'].reduce(function(acc, k) {
-      acc[k] = through.obj(function(chunk, _, next) {
-        this.push(chunk);
-        next();
-      });
+      acc[k] = through.obj();  // pass through stream
       return acc;
     }, {});
 
